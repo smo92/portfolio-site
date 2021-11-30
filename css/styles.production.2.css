@@ -221,21 +221,22 @@ color: #2b2b2b;
 }
 @media all and (max-width: 500px){
   .grid{
+  .project-list{
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
  }
 }
 @media all and (min-width:500px) and (max-width:750px){
-  .grid{
-    -ms-grid-columns: 1fr 1fr;
+  .project-list{
+    -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media all and (max-width:750px) {
-  .grid{
+  .project-list{
     grid-gap: 10px;
   }
-  .grid-item:last-child{
+  .project-list-item:last-child{
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
